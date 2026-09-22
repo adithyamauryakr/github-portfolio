@@ -1,0 +1,11 @@
+[project]
+name = "github-portfolio"
+version = "0.1.0"
+description = "Personal portfolio site, built with MkDocs Material and deployed to GitHub Pages."
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.5",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,220 @@
+/* -----------------------------------------------------------------------
+   Color palette
+   db5461 Lobster Pink · 686963 Dim Grey · 8aa29e Muted Teal
+   3d5467 Charcoal Blue · f1edee White Smoke
+   ----------------------------------------------------------------------- */
+
+:root {
+  --pink: #db5461;
+  --grey: #686963;
+  --teal: #8aa29e;
+  --blue: #3d5467;
+  --smoke: #f1edee;
+
+  --md-primary-fg-color: var(--blue);
+  --md-primary-fg-color--light: var(--teal);
+  --md-primary-fg-color--dark: #232c34;
+  --md-primary-bg-color: var(--smoke);
+
+  --md-accent-fg-color: var(--pink);
+  --md-accent-fg-color--transparent: #db546126;
+  --md-accent-bg-color: var(--smoke);
+
+  --md-default-bg-color: #1b232a;
+  --md-default-fg-color: var(--smoke);
+  --md-default-fg-color--light: #cfd3d2;
+  --md-default-fg-color--lighter: var(--teal);
+  --md-default-fg-color--lightest: #3a444d;
+
+  --md-typeset-color: var(--smoke);
+  --md-typeset-a-color: var(--pink);
+  --md-code-bg-color: #232c34;
+  --md-code-fg-color: var(--smoke);
+}
+
+body {
+  background: radial-gradient(circle at top, #22303a 0%, #151c22 65%);
+}
+
+/* -----------------------------------------------------------------------
+   Frosted glass top navigation
+   ----------------------------------------------------------------------- */
+
+.md-header {
+  background-color: rgba(35, 44, 52, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 1px 0 rgba(241, 237, 238, 0.08), 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.md-tabs {
+  background-color: rgba(61, 84, 103, 0.4);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(241, 237, 238, 0.06);
+}
+
+.md-tabs__link {
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+  color: var(--pink);
+}
+
+.md-header__title,
+.md-header__topic {
+  font-weight: 600;
+}
+
+/* -----------------------------------------------------------------------
+   Hero
+   ----------------------------------------------------------------------- */
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(135deg, var(--pink), var(--teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-tagline {
+  color: var(--teal);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.md-button {
+  border-radius: 999px !important;
+}
+
+/* -----------------------------------------------------------------------
+   Card grid (highlights, skills, contact)
+   ----------------------------------------------------------------------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.card {
+  background: rgba(241, 237, 238, 0.04);
+  border: 1px solid rgba(241, 237, 238, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(219, 84, 97, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--pink);
+  font-size: 1rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------------
+   Tag list (skills page)
+   ----------------------------------------------------------------------- */
+
+.tag-list code {
+  background: rgba(138, 162, 158, 0.15);
+  border: 1px solid rgba(138, 162, 158, 0.35);
+  color: var(--smoke);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  display: inline-block;
+}
+
+/* -----------------------------------------------------------------------
+   Timeline (experience page)
+   ----------------------------------------------------------------------- */
+
+.timeline {
+  border-left: 2px solid rgba(138, 162, 158, 0.35);
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 0.4rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--pink);
+  box-shadow: 0 0 0 4px rgba(219, 84, 97, 0.18);
+}
+
+.timeline-period {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--teal);
+}
+
+/* -----------------------------------------------------------------------
+   Publications list
+   ----------------------------------------------------------------------- */
+
+.pub-list {
+  margin: 1.5rem 0;
+}
+
+.pub-item {
+  background: rgba(241, 237, 238, 0.03);
+  border-left: 3px solid var(--pink);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* -----------------------------------------------------------------------
+   CV embed
+   ----------------------------------------------------------------------- */
+
+.cv-embed iframe {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid rgba(241, 237, 238, 0.12);
+  border-radius: 12px;
+  background: #fff;
+  margin-top: 1rem;
+}

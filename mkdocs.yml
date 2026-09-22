@@ -1,0 +1,54 @@
+site_name: Adithya Maurya K R
+site_description: Computational chemistry & machine learning research portfolio
+site_author: Adithya Maurya K R
+repo_url: https://github.com/adithyamauryakr/github-portfolio
+repo_name: adithyamauryakr/github-portfolio
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - toc.integrate
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Experience: experience.md
+  - Publications: publications.md
+  - Skills: skills.md
+  - CV: cv.md
+  - Contact: contact.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/adithyamauryakr
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/adithyamauryakr/
+    - icon: fontawesome/solid/envelope
+      link: mailto:adithya.maurya@cbs.ac.in
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
