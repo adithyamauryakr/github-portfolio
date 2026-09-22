@@ -4,6 +4,8 @@ title: Home
 
 <div class="hero" markdown>
 
+![Adithya Maurya K R](assets/img/profile.jpg){ .hero-photo }
+
 # Adithya Maurya K R
 
 <p class="hero-tagline">Chemical Sciences &middot; AI/ML for Chemistry</p>

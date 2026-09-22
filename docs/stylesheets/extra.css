@@ -1,91 +1,93 @@
 /* -----------------------------------------------------------------------
    Color palette
-   db5461 Lobster Pink · 686963 Dim Grey · 8aa29e Muted Teal
-   3d5467 Charcoal Blue · f1edee White Smoke
+   d6f9dd Frosted Mint · 99f7ab Light Green · abdf75 Willow Green
+   60695c Ebony · c5d6d8 Pale Sky
    ----------------------------------------------------------------------- */
 
 :root {
-  --pink: #db5461;
-  --grey: #686963;
-  --teal: #8aa29e;
-  --blue: #3d5467;
-  --smoke: #f1edee;
+  --mint: #d6f9dd;
+  --green: #99f7ab;
+  --willow: #abdf75;
+  --ebony: #60695c;
+  --sky: #c5d6d8;
 }
 
 /* Light (default) */
 [data-md-color-scheme="default"] {
-  --muted: #4b6b65;
+  --muted: #7c8574;
+  --pop: var(--willow);
 
-  --md-primary-fg-color: var(--blue);
-  --md-primary-fg-color--light: var(--teal);
-  --md-primary-fg-color--dark: var(--blue);
-  --md-primary-bg-color: var(--blue);
+  --md-primary-fg-color: var(--ebony);
+  --md-primary-fg-color--light: var(--sky);
+  --md-primary-fg-color--dark: var(--ebony);
+  --md-primary-bg-color: var(--ebony);
 
-  --md-accent-fg-color: var(--pink);
-  --md-accent-fg-color--transparent: #db546120;
-  --md-accent-bg-color: var(--smoke);
+  --md-accent-fg-color: var(--ebony);
+  --md-accent-fg-color--transparent: rgba(96, 105, 92, 0.12);
+  --md-accent-bg-color: var(--mint);
 
-  --md-default-bg-color: var(--smoke);
-  --md-default-fg-color: var(--blue);
-  --md-default-fg-color--light: var(--grey);
-  --md-default-fg-color--lighter: var(--teal);
-  --md-default-fg-color--lightest: #dcdfde;
+  --md-default-bg-color: var(--mint);
+  --md-default-fg-color: var(--ebony);
+  --md-default-fg-color--light: var(--muted);
+  --md-default-fg-color--lighter: var(--sky);
+  --md-default-fg-color--lightest: #dfe7e2;
 
-  --md-typeset-color: var(--blue);
-  --md-typeset-a-color: var(--pink);
-  --md-code-bg-color: #e6ebea;
-  --md-code-fg-color: var(--blue);
+  --md-typeset-color: var(--ebony);
+  --md-typeset-a-color: var(--ebony);
+  --md-code-bg-color: #e4f3e6;
+  --md-code-fg-color: var(--ebony);
 
-  --glass-header-bg: rgba(241, 237, 238, 0.55);
-  --glass-tabs-bg: rgba(241, 237, 238, 0.38);
-  --glass-border: rgba(61, 84, 103, 0.1);
-  --card-bg: rgba(61, 84, 103, 0.035);
-  --card-border: rgba(61, 84, 103, 0.12);
-  --tag-bg: rgba(138, 162, 158, 0.2);
-  --tag-border: rgba(138, 162, 158, 0.45);
-  --pub-bg: rgba(61, 84, 103, 0.03);
+  --glass-header-bg: rgba(255, 255, 255, 0.5);
+  --glass-tabs-bg: rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(96, 105, 92, 0.1);
+  --card-bg: rgba(255, 255, 255, 0.4);
+  --card-border: rgba(96, 105, 92, 0.15);
+  --tag-bg: rgba(171, 223, 117, 0.35);
+  --tag-border: rgba(171, 223, 117, 0.65);
+  --pub-bg: rgba(255, 255, 255, 0.35);
 }
 
 [data-md-color-scheme="default"] body {
-  background: radial-gradient(circle at top, #ffffff 0%, #eef2f1 55%, #e7ece9 100%);
+  background: radial-gradient(circle at top, #ffffff 0%, #eefcf1 40%, var(--mint) 75%, var(--sky) 100%);
 }
 
 /* Dark (slate) */
 [data-md-color-scheme="slate"] {
-  --muted: var(--teal);
+  --muted: rgba(197, 214, 216, 0.75);
+  --pop: var(--green);
 
-  --md-primary-fg-color: var(--blue);
-  --md-primary-fg-color--light: var(--teal);
-  --md-primary-fg-color--dark: #232c34;
-  --md-primary-bg-color: var(--smoke);
+  --md-primary-fg-color: var(--ebony);
+  --md-primary-fg-color--light: var(--sky);
+  --md-primary-fg-color--dark: #181a16;
+  --md-primary-bg-color: var(--mint);
 
-  --md-accent-fg-color: var(--pink);
-  --md-accent-fg-color--transparent: #db546126;
-  --md-accent-bg-color: var(--smoke);
+  --md-accent-fg-color: var(--green);
+  --md-accent-fg-color--transparent: rgba(153, 247, 171, 0.18);
+  --md-accent-bg-color: var(--mint);
 
-  --md-default-bg-color: #1b232a;
-  --md-default-fg-color: var(--smoke);
-  --md-default-fg-color--light: #cfd3d2;
-  --md-default-fg-color--lighter: var(--teal);
-  --md-default-fg-color--lightest: #3a444d;
+  --md-default-bg-color: #14160f;
+  --md-default-fg-color: var(--mint);
+  --md-default-fg-color--light: #cfe3d3;
+  --md-default-fg-color--lighter: var(--sky);
+  --md-default-fg-color--lightest: #333a2e;
 
-  --md-typeset-color: var(--smoke);
-  --md-typeset-a-color: var(--pink);
-  --md-code-bg-color: #232c34;
-  --md-code-fg-color: var(--smoke);
+  --md-typeset-color: var(--mint);
+  --md-typeset-a-color: var(--green);
+  --md-code-bg-color: #202519;
+  --md-code-fg-color: var(--mint);
 
-  --glass-header-bg: rgba(35, 44, 52, 0.55);
-  --glass-tabs-bg: rgba(61, 84, 103, 0.4);
-  --glass-border: rgba(241, 237, 238, 0.06);
-  --card-bg: rgba(241, 237, 238, 0.04);
-  --card-border: rgba(241, 237, 238, 0.08);
-  --tag-bg: rgba(138, 162, 158, 0.15);
-  --tag-border: rgba(138, 162, 158, 0.35);
-  --pub-bg: rgba(241, 237, 238, 0.03);
+  --glass-header-bg: rgba(50, 58, 42, 0.55);
+  --glass-tabs-bg: rgba(96, 105, 92, 0.35);
+  --glass-border: rgba(214, 249, 221, 0.08);
+  --card-bg: rgba(214, 249, 221, 0.05);
+  --card-border: rgba(214, 249, 221, 0.12);
+  --tag-bg: rgba(153, 247, 171, 0.15);
+  --tag-border: rgba(153, 247, 171, 0.35);
+  --pub-bg: rgba(214, 249, 221, 0.03);
 }
 
 [data-md-color-scheme="slate"] body {
-  background: radial-gradient(circle at top, #22303a 0%, #151c22 65%);
+  background: radial-gradient(circle at top, #232a1d 0%, #14160f 65%);
 }
 
 /* -----------------------------------------------------------------------
@@ -113,12 +115,17 @@
 .md-tabs__link--active,
 .md-tabs__link:hover {
   opacity: 1;
-  color: var(--pink);
+  color: var(--md-accent-fg-color);
 }
 
 .md-header__title,
 .md-header__topic {
   font-weight: 600;
+}
+
+/* Site name next to the logo is redundant with the Home hero heading */
+.md-header__topic:not([data-md-component]) {
+  display: none;
 }
 
 /* Swap the default logo icon for a code-styled brand mark */
@@ -140,8 +147,8 @@
   padding: 0.4rem 0.65rem;
   border-radius: 6px;
   background: var(--md-accent-fg-color--transparent);
-  border: 1px solid rgba(219, 84, 97, 0.4);
-  color: var(--pink);
+  border: 1px solid var(--card-border);
+  color: var(--md-accent-fg-color);
   white-space: nowrap;
 }
 
@@ -154,10 +161,21 @@
   padding: 2.5rem 0 1rem;
 }
 
+.hero-photo {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.25rem;
+  display: block;
+  border: 3px solid var(--card-border);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
 .hero h1 {
   font-size: 2.75rem;
   margin-bottom: 0.25rem;
-  background: linear-gradient(135deg, var(--pink), var(--teal));
+  background: linear-gradient(135deg, var(--md-typeset-a-color), var(--pop));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -204,12 +222,12 @@
 
 .card:hover {
   transform: translateY(-2px);
-  border-color: rgba(219, 84, 97, 0.4);
+  border-color: var(--pop);
 }
 
 .card h3 {
   margin-top: 0;
-  color: var(--pink);
+  color: var(--md-accent-fg-color);
   font-size: 1rem;
 }
 
@@ -237,7 +255,7 @@
    ----------------------------------------------------------------------- */
 
 .timeline {
-  border-left: 2px solid rgba(138, 162, 158, 0.45);
+  border-left: 2px solid var(--tag-border);
   padding-left: 1.5rem;
   margin-left: 0.5rem;
 }
@@ -255,8 +273,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--pink);
-  box-shadow: 0 0 0 4px rgba(219, 84, 97, 0.18);
+  background: var(--pop);
+  box-shadow: 0 0 0 4px var(--tag-bg);
 }
 
 .timeline-period {
@@ -276,7 +294,7 @@
 
 .pub-item {
   background: var(--pub-bg);
-  border-left: 3px solid var(--pink);
+  border-left: 3px solid var(--pop);
   border-radius: 8px;
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
