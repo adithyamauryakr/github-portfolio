@@ -4,7 +4,7 @@ title: Home
 
 <div class="hero" markdown>
 
-![Adithya Maurya K R](assets/img/profile.jpg){ .hero-photo }
+<div class="hero-copy" markdown>
 
 # Adithya Maurya K R
 
@@ -22,6 +22,10 @@ Excellence in Basic Sciences, Mumbai**, on a master's thesis placement at
 [Get in touch](contact.md){ .md-button .md-button--primary }
 [Download CV](assets/cv/CV_AdithyaMauryaKR.pdf){ .md-button }
 </div>
+
+</div>
+
+![Adithya Maurya K R](assets/img/profile.jpg){ .hero-photo }
 
 </div>
 

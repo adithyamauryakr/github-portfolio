@@ -1,23 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
-<g stroke="#64748b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-<polygon points="406.0,420.0 373.0,477.2 307.0,477.2 274.0,420.0 307.0,362.8 373.0,362.8" />
-<polygon points="505.0,362.8 472.0,420.0 406.0,420.0 373.0,362.8 406.0,305.7 472.0,305.7" />
-<polygon points="810.0,246.5 772.7,283.8 721.7,270.2 708.0,219.2 745.3,181.8 796.3,195.5" />
-<line x1="354.5" y1="487.7" x2="325.5" y2="487.7" stroke-width="2.4" />
-<line x1="274.1" y1="398.7" x2="288.6" y2="373.6" stroke-width="2.4" />
-<line x1="391.4" y1="373.6" x2="405.9" y2="398.7" stroke-width="2.4" />
-<line x1="486.6" y1="373.6" x2="472.1" y2="398.7" stroke-width="2.4" />
-<line x1="405.9" y1="398.7" x2="391.4" y2="373.6" stroke-width="2.4" />
-<line x1="424.5" y1="316.2" x2="453.5" y2="316.2" stroke-width="2.4" />
-<line x1="505.0" y1="362.8" x2="551.0" y2="332.8" />
-<line x1="551.0" y1="332.8" x2="597.0" y2="302.8" />
-<line x1="597.0" y1="302.8" x2="643.0" y2="272.8" />
-<line x1="643.0" y1="272.8" x2="689.0" y2="242.8" />
-<line x1="689.0" y1="242.8" x2="708.0" y2="219.2" />
-<line x1="551.0" y1="332.8" x2="559.0" y2="286.8" />
-<line x1="559.3" y1="326.2" x2="564.5" y2="295.9" stroke-width="2.4" />
-<circle cx="505.0" cy="362.8" r="4.2" fill="#64748b" stroke="none" />
-<circle cx="597.0" cy="302.8" r="4.2" fill="#64748b" stroke="none" />
-<circle cx="689.0" cy="242.8" r="4.2" fill="#64748b" stroke="none" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+<g stroke="#475569" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<polygon points="705.0,600.0 657.5,682.3 562.5,682.3 515.0,600.0 562.5,517.7 657.5,517.7" stroke-width="3" />
+<line x1="705.6" y1="633.2" x2="686.6" y2="666.1" stroke-width="2.3" />
+<line x1="533.4" y1="666.1" x2="514.4" y2="633.2" stroke-width="2.3" />
+<line x1="591.0" y1="500.6" x2="629.0" y2="500.6" stroke-width="2.3" />
+<line x1="515.0" y1="600.0" x2="457.0" y2="566.0" />
+<line x1="457.0" y1="566.0" x2="399.0" y2="600.0" />
+<line x1="399.0" y1="600.0" x2="341.0" y2="566.0" />
+<circle cx="457.0" cy="566.0" r="4" fill="#475569" stroke="none" />
+<circle cx="399.0" cy="600.0" r="4" fill="#475569" stroke="none" />
+<text x="303.0" y="572.0" font-family="Inter, ui-sans-serif, system-ui" font-size="28" fill="#475569" stroke="none">HO</text>
+<g opacity="0.55">
+<polygon points="237.0,207.1 198.7,239.2 151.7,222.1 143.0,172.9 181.3,140.8 228.3,157.9" stroke-width="2.4" />
+<line x1="231.3" y1="223.6" x2="216.0" y2="236.5" stroke-width="1.9" />
+<line x1="140.2" y1="208.9" x2="136.8" y2="189.2" stroke-width="1.9" />
+<line x1="198.5" y1="137.4" x2="217.3" y2="144.3" stroke-width="1.9" />
+</g>
 </g>
 </svg>

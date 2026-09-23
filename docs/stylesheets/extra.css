@@ -1,97 +1,101 @@
 /* -----------------------------------------------------------------------
-   Modern minimal theme: white/near-black base, single indigo accent,
-   subtle chemical-structure watermark in the background.
+   Color palette
+   006d77 Stormy Teal · 83c5be Pearl Aqua · edf6f9 Alice Blue
+   ffddd2 Almond Silk · e29578 Tangerine Dream
    ----------------------------------------------------------------------- */
 
 :root {
-  --indigo: #4f46e5;
-  --indigo-soft: #818cf8;
+  --teal: #006d77;
+  --aqua: #83c5be;
+  --alice: #edf6f9;
+  --almond: #ffddd2;
+  --tangerine: #e29578;
 }
 
 /* Light (default) */
 [data-md-color-scheme="default"] {
-  --ink: #16181d;
-  --paper: #ffffff;
-  --muted: #6b7280;
-  --line: rgba(22, 24, 29, 0.1);
+  --ink: var(--teal);
+  --paper: var(--alice);
+  --muted: #3f8a90;
+  --warm: var(--tangerine);
 
-  --md-primary-fg-color: var(--ink);
-  --md-primary-fg-color--light: var(--muted);
-  --md-primary-fg-color--dark: var(--ink);
-  --md-primary-bg-color: var(--paper);
+  --md-primary-fg-color: var(--teal);
+  --md-primary-fg-color--light: var(--aqua);
+  --md-primary-fg-color--dark: var(--teal);
+  --md-primary-bg-color: var(--teal);
 
-  --md-accent-fg-color: var(--indigo);
-  --md-accent-fg-color--transparent: rgba(79, 70, 229, 0.12);
-  --md-accent-bg-color: var(--paper);
+  --md-accent-fg-color: var(--teal);
+  --md-accent-fg-color--transparent: rgba(0, 109, 119, 0.1);
+  --md-accent-bg-color: #ffffff;
 
-  --md-default-bg-color: var(--paper);
-  --md-default-fg-color: var(--ink);
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: var(--teal);
   --md-default-fg-color--light: var(--muted);
-  --md-default-fg-color--lighter: #9ca3af;
-  --md-default-fg-color--lightest: #e5e7eb;
+  --md-default-fg-color--lighter: var(--aqua);
+  --md-default-fg-color--lightest: #dcecea;
 
-  --md-typeset-color: var(--ink);
-  --md-typeset-a-color: var(--indigo);
-  --md-code-bg-color: #f3f4f6;
-  --md-code-fg-color: var(--ink);
+  --md-typeset-color: var(--teal);
+  --md-typeset-a-color: var(--teal);
+  --md-code-bg-color: #e6f2f1;
+  --md-code-fg-color: var(--teal);
 
-  --glass-header-bg: rgba(255, 255, 255, 0.6);
-  --glass-tabs-bg: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(22, 24, 29, 0.08);
-  --card-bg: rgba(22, 24, 29, 0.025);
-  --card-border: rgba(22, 24, 29, 0.1);
-  --tag-bg: rgba(79, 70, 229, 0.08);
-  --tag-border: rgba(79, 70, 229, 0.25);
-  --pub-bg: rgba(22, 24, 29, 0.02);
-
-  --molecule-opacity: 0.05;
-}
-
-[data-md-color-scheme="default"] body {
-  background: #fbfbfc;
-}
-
-/* Dark (slate) */
-[data-md-color-scheme="slate"] {
-  --ink: #f4f4f5;
-  --paper: #0b0c10;
-  --muted: #9ca3af;
-  --line: rgba(244, 244, 245, 0.1);
-
-  --md-primary-fg-color: var(--ink);
-  --md-primary-fg-color--light: var(--muted);
-  --md-primary-fg-color--dark: #050506;
-  --md-primary-bg-color: #0b0c10;
-
-  --md-accent-fg-color: var(--indigo-soft);
-  --md-accent-fg-color--transparent: rgba(129, 140, 248, 0.18);
-  --md-accent-bg-color: var(--paper);
-
-  --md-default-bg-color: #0b0c10;
-  --md-default-fg-color: var(--ink);
-  --md-default-fg-color--light: var(--muted);
-  --md-default-fg-color--lighter: #6b7280;
-  --md-default-fg-color--lightest: #2a2d34;
-
-  --md-typeset-color: var(--ink);
-  --md-typeset-a-color: var(--indigo-soft);
-  --md-code-bg-color: #17191f;
-  --md-code-fg-color: var(--ink);
-
-  --glass-header-bg: rgba(11, 12, 16, 0.6);
-  --glass-tabs-bg: rgba(11, 12, 16, 0.4);
-  --glass-border: rgba(244, 244, 245, 0.08);
-  --card-bg: rgba(244, 244, 245, 0.03);
-  --card-border: rgba(244, 244, 245, 0.1);
-  --tag-bg: rgba(129, 140, 248, 0.12);
-  --tag-border: rgba(129, 140, 248, 0.3);
-  --pub-bg: rgba(244, 244, 245, 0.02);
+  --glass-header-bg: rgba(237, 246, 249, 0.62);
+  --glass-tabs-bg: rgba(237, 246, 249, 0.42);
+  --glass-border: rgba(0, 109, 119, 0.12);
+  --card-bg: rgba(0, 109, 119, 0.035);
+  --card-border: rgba(0, 109, 119, 0.14);
+  --tag-bg: rgba(131, 197, 190, 0.3);
+  --tag-border: rgba(131, 197, 190, 0.6);
+  --pub-bg: rgba(0, 109, 119, 0.03);
 
   --molecule-opacity: 0.07;
 }
 
+[data-md-color-scheme="default"] body {
+  background: radial-gradient(circle at top, #ffffff 0%, #f6fbfc 45%, var(--alice) 100%);
+}
+
+/* Dark (slate) */
+[data-md-color-scheme="slate"] {
+  --ink: var(--alice);
+  --paper: #04262a;
+  --muted: rgba(237, 246, 249, 0.68);
+  --warm: var(--tangerine);
+
+  --md-primary-fg-color: var(--alice);
+  --md-primary-fg-color--light: var(--aqua);
+  --md-primary-fg-color--dark: #021a1d;
+  --md-primary-bg-color: var(--alice);
+
+  --md-accent-fg-color: var(--aqua);
+  --md-accent-fg-color--transparent: rgba(131, 197, 190, 0.18);
+  --md-accent-bg-color: #04262a;
+
+  --md-default-bg-color: #04262a;
+  --md-default-fg-color: var(--alice);
+  --md-default-fg-color--light: var(--muted);
+  --md-default-fg-color--lighter: var(--aqua);
+  --md-default-fg-color--lightest: #12403f;
+
+  --md-typeset-color: var(--alice);
+  --md-typeset-a-color: var(--aqua);
+  --md-code-bg-color: #0a3339;
+  --md-code-fg-color: var(--alice);
+
+  --glass-header-bg: rgba(4, 38, 42, 0.62);
+  --glass-tabs-bg: rgba(4, 38, 42, 0.42);
+  --glass-border: rgba(237, 246, 249, 0.1);
+  --card-bg: rgba(237, 246, 249, 0.04);
+  --card-border: rgba(237, 246, 249, 0.12);
+  --tag-bg: rgba(131, 197, 190, 0.15);
+  --tag-border: rgba(131, 197, 190, 0.35);
+  --pub-bg: rgba(237, 246, 249, 0.03);
+
+  --molecule-opacity: 0.09;
+}
+
 [data-md-color-scheme="slate"] body {
-  background: #0b0c10;
+  background: radial-gradient(circle at top, #0a3339 0%, #04262a 65%);
 }
 
 /* -----------------------------------------------------------------------
@@ -106,8 +110,8 @@ body::before {
   pointer-events: none;
   background-image: url("../assets/img/molecule-bg.svg");
   background-repeat: no-repeat;
-  background-position: right -120px bottom -80px;
-  background-size: min(70vw, 900px);
+  background-position: right -100px bottom -60px;
+  background-size: min(60vw, 760px);
   opacity: var(--molecule-opacity);
 }
 
@@ -122,7 +126,13 @@ body::before {
   box-shadow: 0 1px 0 var(--glass-border), 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
+/* This build's Material bundle ships no sticky-positioning rule for
+   .md-tabs despite navigation.tabs.sticky being enabled, so the tabs
+   row scrolls away under the (sticky) header. Pin it ourselves. */
 .md-tabs {
+  position: sticky;
+  top: 58px;
+  z-index: 3;
   background-color: var(--glass-tabs-bg);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -174,23 +184,33 @@ body::before {
 }
 
 /* -----------------------------------------------------------------------
-   Hero
+   Hero (two-column: copy left, photo right)
    ----------------------------------------------------------------------- */
 
 .hero {
-  text-align: center;
-  padding: 2.5rem 0 1rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 0 1.5rem;
+  text-align: left;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero-photo {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  margin: 0 auto 1.25rem;
-  display: block;
-  border: 3px solid var(--card-border);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  justify-self: end;
 }
 
 .hero h1 {
@@ -200,9 +220,9 @@ body::before {
 }
 
 .hero-tagline {
-  color: var(--md-accent-fg-color);
+  color: var(--warm);
   font-size: 1.15rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 1.25rem;
 }
@@ -210,9 +230,28 @@ body::before {
 .hero-actions {
   display: flex;
   gap: 0.75rem;
-  justify-content: center;
   flex-wrap: wrap;
   margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 52rem) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-copy {
+    align-items: center;
+    order: 2;
+  }
+  .hero-photo {
+    order: 1;
+    justify-self: center;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
 }
 
 .md-button {
@@ -221,9 +260,9 @@ body::before {
 }
 
 .md-button--primary {
-  background-color: var(--md-accent-fg-color) !important;
-  border-color: var(--md-accent-fg-color) !important;
-  color: #ffffff !important;
+  background-color: var(--ink) !important;
+  border-color: var(--ink) !important;
+  color: var(--paper) !important;
 }
 
 /* -----------------------------------------------------------------------
@@ -299,7 +338,7 @@ body::before {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--md-accent-fg-color);
+  background: var(--warm);
   box-shadow: 0 0 0 4px var(--tag-bg);
 }
 
@@ -320,7 +359,7 @@ body::before {
 
 .pub-item {
   background: var(--pub-bg);
-  border-left: 3px solid var(--md-accent-fg-color);
+  border-left: 3px solid var(--warm);
   border-radius: 8px;
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
